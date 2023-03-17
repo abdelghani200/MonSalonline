@@ -24,6 +24,7 @@
   $client->nom = $data->nom;
   $client->prenom = $data->prenom;
   $client->numtele = $data->numtele;
+  $client->numtele = $data->reff;
   $client->cat_id = $data->cat_id;
 
   // Update post

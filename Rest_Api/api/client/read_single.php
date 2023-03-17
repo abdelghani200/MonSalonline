@@ -19,7 +19,6 @@ $client->read_single();
 
 $client_arr =array(
     'id' => $client->id,
-    'cat_id' => $client->cat_id,
     'nom' => $client->nom,
     'prenom' => $client->prenom,
     'numtele' => $client->numtele

@@ -14,6 +14,7 @@ $db = $database->connect();
 $client = new Client($db);
 
 $result = $client->read();
+
 $num = $result->rowCount();
 
 if($num > 0) {
@@ -25,11 +26,13 @@ if($num > 0) {
 
         $client_item = array(
             'id' => $id,
-            'cat_id' => $cat_id,
             'nom' => $nom,
             'prenom' => $prenom,
+            'email' => $email,
             'numtele' => $numtele,
-            'created_at' => $created_at
+            'created_at' => $created_at,
+            'heure' => $heure
+            
         );
 
         array_push($clients_arr['data'],$client_item);

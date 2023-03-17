@@ -1,15 +1,40 @@
 import { createRouter, createWebHistory } from 'vue-router';
-import Acceuil from './components/Acceuil.vue';
-// import Footer from './components/Footer.vue';
+import Accueil from './components/Accueil.vue';
+import Blog from './components/Blog.vue';
+import Reserver from './components/Reserver.vue';
+import Login from './components/Login.vue';
+import Inscription from './components/Register.vue';
+import Dashboard from  './components/Dashboard.vue';
+
+
+
 
 const routes = [
     {
-        path: '/Acceuil',
-        component: Acceuil,
+        path: '/Accueil',
+        component: Accueil,
     },
-    // {
-    //     path: '/add-countrie', component: addCountrie,
-    // }
+    {
+        path: '/Blog' , 
+        component: Blog,
+    },
+    {
+        path: '/Reserver' , 
+        component: Reserver,
+    },
+    {
+        path: '/Login' , 
+        component: Login,
+    },
+    {
+        path: '/Inscription' , 
+        component: Inscription,
+    },
+    {
+        path: '/Dashboard',
+        component: Dashboard
+    }
+    
 ]
 
 const router = createRouter({
@@ -17,3 +42,4 @@ const router = createRouter({
     routes
 })
 export default router
+
